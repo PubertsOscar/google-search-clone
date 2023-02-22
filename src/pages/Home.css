@@ -21,6 +21,10 @@ color: rgba(0, 0, 0, 0.87);
     text-decoration: underline;
 }
 
+.home__headerLeft--link,
+.home__headerRight--link{
+    cursor: not-allowed;
+}
 .home__headerRight {
     display: flex;
     align-items: center;
@@ -30,7 +34,9 @@ color: rgba(0, 0, 0, 0.87);
 
 .home__headerRight > .MuiSvgIcon-root{
     margin-right: 20px;
+    cursor: not-allowed;
 }
+
 
 .home__body{
     flex: 1;

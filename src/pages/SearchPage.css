@@ -29,10 +29,14 @@ max-width: unset;
     align-items: center;
     color: grey;
 }
+.searchPage__option{
+    cursor: not-allowed;
+}
 
 .searchPage__options a{
     text-decoration: none;
     color: gray;
+    cursor: not-allowed;
 }
 .searchPage__optionsRight,
 .searchPage__optionsLeft{

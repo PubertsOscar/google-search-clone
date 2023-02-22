@@ -17,11 +17,8 @@ function SearchPage() {
 
   const { data } = useGoogleSearch(term);
 
-
   //Mock API CALL (use for test)
-  // const data = Response;
-
-  console.log(data);
+  //const data = Response;
 
   return (
     <div className="searchPage">
@@ -32,48 +29,49 @@ function SearchPage() {
             src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
           />
         </Link>
-        
+
         <div className="searchPage__headerBody">
           <Search hideButtons />
           <div className="searchPage__options">
             <div className="searchPage__optionsLeft">
               <div className="searchPage__option">
                 <SearchIcon />
-                <Link to="/all">All</Link>
+                <Link to="">All</Link>
               </div>
               <div className="searchPage__option">
                 <DescriptionIcon />
-                <Link to="/news">News</Link>
+                <Link to="">News</Link>
               </div>
               <div className="searchPage__option">
                 <ImageIcon />
-                <Link to="/images">Images</Link>
+                <Link to="">Images</Link>
               </div>
               <div className="searchPage__option">
                 <LocalOfferIcon />
-                <Link to="/shopping">Shopping</Link>
+                <Link to="">Shopping</Link>
               </div>
               <div className="searchPage__option">
                 <RoomIcon />
-                <Link to="/maps">Maps</Link>
+                <Link to="">Maps</Link>
               </div>
               <div className="searchPage__option">
                 <MoreVertIcon />
-                <Link to="/more">More</Link>
+                <Link to="">More</Link>
               </div>
             </div>
 
             <div className="searchPage__optionsRight">
               <div className="searchPage__option">
-                <Link to="/settings">Settings</Link>
+                <Link to="">Settings</Link>
               </div>
               <div className="searchPage__option">
-                <Link to="/tools">Tools</Link>
+                <Link to="">Tools</Link>
               </div>
             </div>
           </div>
         </div>
       </div>
+
       {term && (
         <div className="searchPage__results">
           <p className="searchPage__resultCount">
